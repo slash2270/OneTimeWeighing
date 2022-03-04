@@ -7,13 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-        /*
-         * 有三個籃子 每顆球重10g 有一籃的球都是9g 只能秤一次 請問是哪一籃?
-         * totalWeight = 每一籃照順序編號取出幾顆球的加總重量
-         * oneStandardWeight = 每顆球的標準重量
-         * quantity = 幾個籃子
-         */
-
     private val textView: TextView by lazy {
         findViewById(R.id.text)
     }
@@ -33,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+       /*
+        * totalWeight = 每一籃照順序編號取出幾顆球的加總重量
+        * oneStandardWeight = 每顆球的標準重量
+        * quantity = 幾個籃子
+        */
 
     private fun getTarget(totalWeight: Int, oneStandardWeight: Int, quantity: Int): Int {
 
